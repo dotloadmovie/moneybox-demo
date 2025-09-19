@@ -15,6 +15,10 @@ export default async function HomePage() {
 
   const fileURL = `vscode://file/${fileURLToPath(import.meta.url)}`
 
+  const { docs: categories } = await payload.find({ collection: 'categories' })
+
+  console.log(categories)
+
   return (
     <div className="home">
       <div className="content">
