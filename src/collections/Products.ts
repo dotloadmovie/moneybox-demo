@@ -16,6 +16,11 @@ export const Products: CollectionConfig = {
       type: 'text',
       required: true,
     },
+    {
+      name: 'Category',
+      type: 'relationship',
+      relationTo: 'categories'
+    },
      {
       name: 'Logo',
       type: 'relationship',
