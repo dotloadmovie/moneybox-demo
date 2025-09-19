@@ -7,6 +7,7 @@ import { fileURLToPath } from 'url'
 import config from '@/payload.config'
 import './styles.css'
 import Header from './components/header/header'
+import Carousel from './components/carousel/carousel'
 
 export default async function HomePage() {
   const payloadConfig = await config
@@ -17,6 +18,10 @@ export default async function HomePage() {
   return (
     <div className="core">
       <Header />
+
+      <div className="content">
+        <Carousel items={categories} />
+      </div>
     </div>
   )
 }

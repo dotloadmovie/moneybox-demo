@@ -1,0 +1,59 @@
+
+:root {
+  --darkgreen: rgb(2, 40, 40);
+  --lightgreen: rgb(120, 227, 223);
+}
+
+
+.embla {
+  width: 100%;
+  margin: auto;
+  --slide-height: 19rem;
+  --slide-spacing: 1rem;
+  --slide-size: 50%;
+}
+.embla__viewport {
+  overflow: hidden;
+}
+
+.embla__container {
+  display: flex;
+}
+
+.embla__slide {
+  flex: 0 0 33.333%;
+  min-width: 0;
+  padding: 0 20px;
+}
+
+.carousel-button {
+  position: absolute;
+  top: 140px;
+  width: 60px;
+  border-radius: 100px;
+  border: 0;
+  height: 60px;
+  cursor: pointer;
+  color: var(--darkgreen);
+  background: var(--lightgreen);
+  transition: all 0.2s ease-out, transform 0.08s ease-out
+}
+
+.carousel-button svg {
+  height: 20px;
+}
+
+.carousel-button:hover {
+  color: var(--lightgreen);
+  background: var(--darkgreen);
+}
+
+.prev-button {
+  z-index: 100;
+  left: 20px;
+}
+
+.next-button {
+  z-index: 100;
+  right: 20px;
+}
