@@ -1,0 +1,43 @@
+.header {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 92px;
+    padding: 0 60px;
+    box-shadow: 0 0 11px rgb(0 0 0 / 15%)
+}
+
+.header img {
+    width: 232px;
+}
+
+.button {
+    text-align: center;
+    font-weight: 500;
+    border: 1px solid #566F6F;
+    color: #566F6F;
+    border-radius: 28px;
+    background-color: transparent;
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
+    padding: 5px 0px 5px 20px;
+    width: 120px;
+}
+
+.button::before {
+    content: '';
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-image: url(/img/lock.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 16px;
+    top: 50%;
+    transition: all .3s ease-out;
+    transform: translateY(-50%);
+}
