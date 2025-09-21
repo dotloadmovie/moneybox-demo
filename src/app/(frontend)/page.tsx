@@ -19,6 +19,8 @@ export default async function HomePage() {
     <div className="core">
       <Header />
 
+      <h1 className="page-heading">Explore accounts</h1>
+
       <div className="content">
         <Carousel items={categories} />
       </div>

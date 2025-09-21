@@ -23,7 +23,19 @@
 .embla__slide {
   flex: 0 0 33.333%;
   padding: 0 20px;
+
+  @media (max-width: 1024px) {
+    flex: 0 0 100%;
+     padding: 0 20px;
+  }
+
+
+  @media (min-width: 2000px) {
+    flex: 0 0 20%;
+     padding: 0 20px;
+  }
 }
+
 
 .carousel-button {
   position: absolute;
