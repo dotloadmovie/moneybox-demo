@@ -1,0 +1,46 @@
+.expando {
+    margin: 0 0 10px 0;
+}
+
+.expando[aria-expanded="true"] .expandotoggle::after {
+    transform: rotate(135deg)
+}
+
+.expandotoggle {
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    position: relative;
+}
+
+.expandotoggle::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    width: 10px;
+    height: 10px;
+    background: transparent;
+    display: block;
+    top: 5px;
+    border-left: 4px solid black;
+    border-bottom: 4px solid black;
+    transform: rotate(-45deg)
+}
+
+.expandocontent {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px 0 0;
+}
+
+.expandocontent img {
+    width: 20%;
+    margin-right: 20px;
+}
+
+.expandocontent p {
+    flex-grow: 1;
+}

@@ -25,7 +25,7 @@ const Carousel = ({ items }: CarouselProps) => {
         <div className="embla__container">
           {items.map((val, index) => (
             <div className="embla__slide" key={val.id}>
-              <CategoryItem>{val.Name}</CategoryItem>
+              <CategoryItem category={val} />
             </div>
           ))}
         </div>

@@ -8,9 +8,8 @@
 .embla {
   width: 100%;
   margin: auto;
-  --slide-height: 19rem;
-  --slide-spacing: 1rem;
-  --slide-size: 50%;
+  position: relative;
+
 }
 .embla__viewport {
   overflow: hidden;
@@ -18,17 +17,17 @@
 
 .embla__container {
   display: flex;
+  align-items: flex-start;
 }
 
 .embla__slide {
   flex: 0 0 33.333%;
-  min-width: 0;
   padding: 0 20px;
 }
 
 .carousel-button {
   position: absolute;
-  top: 140px;
+  top: 20px;
   width: 60px;
   border-radius: 100px;
   border: 0;
@@ -50,10 +49,10 @@
 
 .prev-button {
   z-index: 100;
-  left: 20px;
+  left: -20px;
 }
 
 .next-button {
   z-index: 100;
-  right: 20px;
+  right: -20px;
 }

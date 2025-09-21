@@ -5,7 +5,8 @@ const ProductsInCategory:Field = {
     name: 'productsInCategory',
     type: 'join',
     collection: 'products',
-    on: 'Category'
+    on: 'Category',
+    maxDepth: 4
 }
 
 export const Categories: CollectionConfig = {
