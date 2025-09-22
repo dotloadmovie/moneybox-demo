@@ -24,7 +24,7 @@ const Carousel = ({ items }: CarouselProps) => {
       <div className="embla__viewport" ref={emblaRef}>
         <div className="embla__container">
           {items.map((val, index) => (
-            <div className="embla__slide" key={val.id}>
+            <div className="embla__slide" key={val.id} aria-label="carousel-element">
               <CategoryItem category={val} />
             </div>
           ))}

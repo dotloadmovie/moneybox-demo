@@ -17,4 +17,18 @@ describe('API', () => {
     })
     expect(users).toBeDefined()
   })
+
+  it('fetches products', async () => {
+    const products = await payload.find({
+      collection: 'products',
+    })
+    expect(products).toBeDefined()
+  })
+
+  it('fetches categories', async () => {
+    const categories = await payload.find({
+      collection: 'categories',
+    })
+    expect(categories).toBeDefined()
+  })
 })

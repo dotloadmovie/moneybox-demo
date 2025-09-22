@@ -6,8 +6,8 @@ const Header = () => {
   return (
     <div className={styles.header}>
       <img src="/img/moneybox-logo.svg" alt="moneybox logo" />
-      <a className={styles.button} href="https://webapp.moneyboxapp.com/auth/login">
-        Login
+      <a className={styles.button} href="https://webapp.moneyboxapp.com/auth/login" rel="external">
+        Log in
       </a>
     </div>
   )
